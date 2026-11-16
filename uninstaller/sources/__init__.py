@@ -1,0 +1,1 @@
+"""Detectable installation sources."""
