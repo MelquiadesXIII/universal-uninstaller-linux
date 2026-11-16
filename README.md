@@ -4,6 +4,23 @@ Evidence-based application uninstaller for Linux. It detects APT/.deb, Flatpak, 
 
 > **Development status:** early release. Review the current limitations before using it on a production system.
 
+## Latest release
+
+The current pre-release is [`v0.1.0-alpha.1`](https://github.com/MelquiadesXIII/universal-uninstaller-linux/releases/tag/v0.1.0-alpha.1).
+
+Download and verify the standalone zipapp:
+
+```bash
+curl -LO https://github.com/MelquiadesXIII/universal-uninstaller-linux/releases/download/v0.1.0-alpha.1/uninstall.pyz
+curl -LO https://github.com/MelquiadesXIII/universal-uninstaller-linux/releases/download/v0.1.0-alpha.1/SHA256SUMS
+sed 's#dist/##' SHA256SUMS | sha256sum --check
+chmod +x uninstall.pyz
+./uninstall.pyz --sources
+```
+
+The release is an early alpha. See the [usage guide](docs/usage.md) and
+[known limitations](docs/development.md#known-gaps) before using it.
+
 ## What it supports
 
 | Source | Current behavior |
